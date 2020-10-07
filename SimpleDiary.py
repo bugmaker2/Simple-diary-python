@@ -1,3 +1,9 @@
+# -*- coding: UTF-8 -*-
+# Name: Simple diary
+# Version: 1.0.0 2020-3-13
+# Autuor: ColourfulWhite
+# QQ: 2742622317
+
 from PyQt5.QtWidgets import QMainWindow,QApplication,\
     QPushButton,QDesktopWidget,QAction,QLineEdit,QTextEdit,\
     QFileDialog,QMessageBox
@@ -39,16 +45,16 @@ class Main_Function(QMainWindow):
         # Help Menu
         helpMenu = menubar.addMenu('Help')
         # # contact author
-        contactAction = QAction('contact author',self)
-        contactAction.triggered.connect(self.contact)
-        helpMenu.addAction(contactAction)
+        # contactAction = QAction('contact author',self)
+        # contactAction.triggered.connect(self.contact)
+        # helpMenu.addAction(contactAction)
         # # help
         helpAction = QAction('help',self)
         helpAction.triggered.connect(self.help)
         helpMenu.addAction(helpAction)
 
-    def contact(self):
-        QMessageBox.about(self,'Contact author',"QQ: 2742622317\nBlog: https://blog.csdn.net/weixin_44226870")
+    # def contact(self):
+    #     QMessageBox.about(self,'Contact author',"QQ: 2742622317\nBlog: https://blog.csdn.net/weixin_44226870")
 
     def help(self):
         QMessageBox.about(self,'Help','open：打开已往日记\nchoose path：永久更改存储文件夹')
